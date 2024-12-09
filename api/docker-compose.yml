@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: ag-sistemas-sql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ag-sistemas
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./data/sql:/data/mysql
