@@ -66,15 +66,15 @@ yarn start:dev
 
 ## Endpoints
 
-#Autenticação
+Autenticação
 - `POST /login`: Autentica um usuário e retorna um token JWT.
 - `POST /register`: Registra um novo usuário.
 
-#Usuários
+Usuários
 - `GET /me`: Retorna o perfil do usuário autenticado.
 - `POST /logout`: Faz logout do usuário autenticado.
 
-#Produtos
+Produtos
 - `POST /products`: Cria um novo produto.
 - `GET /products`: Retorna uma lista de produtos.
 - `GET /products/:id`: Retorna um produto específico.
